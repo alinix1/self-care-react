@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { affirmations, mantras } from './data.js';
 
 function App() {
   return (
@@ -30,7 +31,9 @@ function App() {
           Affirmation
          </label>
       </section>
-      <section className="info-box"></section>
+      <section className="info-box">
+        <p>{affirmations[0]}</p>
+      </section>
     </div>
   );
 }
