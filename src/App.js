@@ -23,8 +23,9 @@ function App() {
 
   return (
     <div>
-      <h1 className="title">Self Care Center</h1>
+      <h1 className="title">✨ Self Care Center ✨</h1>
       <h2 className="sub-title">Which type of message?</h2>
+      <div className="form-box-container">
       <section className="form-box">
         <input
           name="care-type"
@@ -50,8 +51,9 @@ function App() {
           Click
         </button>
       </section>
+      </div>
       <section className="info-box">
-        <p>{statement}</p>
+        <p className="uplifting-message">{statement}</p>
       </section>
     </div>
   );
